@@ -1,13 +1,26 @@
 import ReactDOM from 'react-dom/client';
 import App from 'core/views/containers/App';
 import reportWebVitals from './reportWebVitals';
+import React from 'react';
+import { Provider } from 'react-redux';
 
+import { store } from './core/store';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root')
-);
+import './styles/_styles.scss';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <App />
+  <Provider store={store}>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/*" element={<App />} />
+      </Routes>
+      <ToastContainer autoClose={3000} />
+    </BrowserRouter>
+  </Provider>,
 );
 
 // If you want to start measuring performance in your app, pass a function
