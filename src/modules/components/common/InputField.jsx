@@ -1,4 +1,4 @@
-import React, { forwardRef, useState } from 'react';
+import  { forwardRef, useState } from 'react';
 import cn from 'classnames';
 
 const InputField = forwardRef(

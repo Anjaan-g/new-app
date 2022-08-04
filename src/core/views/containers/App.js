@@ -1,6 +1,6 @@
-import EmailSent from 'modules/components/Authentication/EmailSent';
 import { useEffect } from 'react';
 import { toast } from 'react-toastify';
+import RoutesContainer from 'routes/RoutesContainer';
 
 const App = () => {
   useEffect(() => {
@@ -8,9 +8,8 @@ const App = () => {
   }, []);
 
   return (
-    <div className='app-body'>
-      <p>This is root App</p>
-      <EmailSent />
+    <div className="app-body">
+      <RoutesContainer />
     </div>
   );
 };

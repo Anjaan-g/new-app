@@ -39,11 +39,11 @@ const LoginComponent = ({
     handleForgotPassword();
   };
 
-  const errorToast = message: string => {
+  const errorToast = message => {
     toast.error(message);
   };
 
-  if (serverErrors.responseError) {
+  if (serverErrors?.responseError) {
     errorToast(serverErrors.responseError);
   }
 

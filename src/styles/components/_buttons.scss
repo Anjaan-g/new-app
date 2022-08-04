@@ -1,0 +1,30 @@
+.common-btn {
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  padding: 12px;
+  color: $white;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  outline: none;
+  border-radius: 50px;
+  border-style: none;
+
+  &:focus, &:hover {
+    border-style: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  &.btn-success {
+    background-color: $sb-green-two;
+    border-color: $sb-green-two;
+
+    &:hover {
+      color: $white;
+      background-color: $sb-green-three;
+      border-color: $sb-green-four;
+    }
+  }
+}

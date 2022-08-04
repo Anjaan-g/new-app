@@ -1,9 +1,14 @@
-import { Outlet } from "react-router-dom"
+import NavbarComponent from 'modules/components/Navbar/Navbar';
+import { Fragment } from 'react';
+import { Outlet } from 'react-router-dom';
 
 const WithNavLayout = () => {
   return (
-    <Outlet />
-  )
-}
+    <Fragment>
+      <NavbarComponent />
+      <Outlet />
+    </Fragment>
+  );
+};
 
-export default WithNavLayout
+export default WithNavLayout;

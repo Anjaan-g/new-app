@@ -124,3 +124,159 @@
     }
   }
 }
+
+.login-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px;
+  gap: 16px;
+
+  .login-form-wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid $sb-green-one;
+    gap: 24px;
+    border-radius: 15px;
+    padding: 24px 0px;
+
+    @media screen and (max-width: 512px) {
+      width: 100%;
+    }
+
+    .login-header {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: .75rem 1.25rem;
+      border-bottom: 1px solid $sb-dark-four;
+
+      h4 {
+        font-weight: 500;
+        color: $sb-gray-five;
+      }
+    }
+
+    .login-body {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 24px;
+      padding: 16px;
+
+      .login-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 24px;
+
+        .form-action-container {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+
+          .forget-password {
+            margin: 0px;
+            color: $sb-dark-five;
+
+            &:hover {
+              color: $sb-blue-one;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.register-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+
+  & * {
+    color: $sb-gray-five;
+  }
+
+  .auth-logo-container {
+    padding: 16px;
+  }
+
+  .register-form-wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid $sb-green-one;
+    gap: 16px;
+    border-radius: 15px;
+    padding: 0px 0px 24px 0px;
+
+    @media screen and (max-width: 512px) {
+      width: 100%;
+    }
+
+    .register-header {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: .75rem 1.25rem;
+      border-bottom: 1px solid $sb-dark-four;
+    }
+
+    .register-body {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 24px;
+      padding: 0px 16px 16px 16px;
+
+      .register-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 24px;
+      }
+    }
+  }
+}
+
+.new-account {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 16px;
+  line-height: 18px;
+
+  .text {
+    color: $sb-gray-six;
+  }
+
+  .link {
+    color: $sb-yellow-two!important;
+    text-decoration: none;
+    border-bottom: none;
+    cursor: pointer;
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: $sb-yellow-one!important;
+    }
+  }
+}
